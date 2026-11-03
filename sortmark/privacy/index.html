@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sortmark Privacy Policy</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+<h1>Sortmark Privacy Policy</h1>
+
+<p>Effective date: 2026-11-03</p>
+
+<p>Sortmark is a Safari extension that saves web pages and sorts them into folders. It is made by Jeffrey Knott. The short version: Sortmark has no developer servers, no accounts and no analytics, and the developer never receives your data.</p>
+
+<h2>What Sortmark stores on your device</h2>
+
+<p>When you click the Sortmark button (or use its shortcut), Sortmark reads the current page and saves:</p>
+
+<ul>
+  <li>the page's address, title, description, site name, icon, main image address, and the folder it was filed in;</li>
+  <li>a small screenshot (thumbnail) of the part of the page that was visible, unless you turn off "Save page thumbnails" in Settings &gt; Data. Thumbnails are skipped in private windows;</li>
+  <li>your folders, the sites Sortmark has learned to file for you, and your settings.</li>
+</ul>
+
+<p>All of this stays in Safari's storage for the Sortmark extension on your device. If you turn on Sync with iCloud in Settings (it is off by default), your bookmarks, folders and learned sites are also stored in your private iCloud database, which only your Apple Account can access, to keep your devices in sync; thumbnails, API keys and settings are never synced. Nothing is uploaded to the developer or shared with advertisers or data brokers. Thumbnails are never included in exports. Sortmark does not track you.</p>
+
+<h2>Optional: Sync with iCloud</h2>
+
+<p>Sync with iCloud is off by default. If you turn it on in Settings &gt; Data on your Macs, iPhones and iPads (signed in to the same Apple Account), Sortmark keeps a copy of your bookmarks, folders and learned sites in your private database in Apple's iCloud (CloudKit), so every device ends up with the same library. Bookmarks already on a device and in iCloud are merged when you turn it on.</p>
+
+<ul>
+  <li>What syncs: each bookmark's address, title, description, site name, icon (small ones), main image address, folder and dates; your folders; the sites Sortmark learned to file for you; and when you delete them.</li>
+  <li>What never syncs: thumbnails (screenshots), API keys, your Smart sorting choice and consent, appearance and other settings.</li>
+  <li>Where it goes: your own iCloud account, through Apple's CloudKit private database. It counts against your iCloud storage. The developer has no access to it and runs no servers. Page content (address, title, description, icon and folder names) is stored in CloudKit encrypted fields, which are end-to-end encrypted when you turn on Advanced Data Protection for iCloud. The domains of learned sites are part of record names, which are not encrypted.</li>
+  <li>Deletions are remembered for 90 days. If a device hasn't synced for longer than that, bookmarks you deleted elsewhere may come back.</li>
+  <li>To stop: turn off Sync with iCloud in Settings &gt; Data on each device. Your bookmarks stay on the device.</li>
+  <li>To delete the iCloud copy: Settings &gt; Data &gt; "Delete Sortmark's iCloud data…" turns sync off on that device and deletes Sortmark's data from iCloud; your other devices turn sync off the next time they sync and keep their bookmarks. "Delete all data…" turns sync off first and leaves the iCloud copy alone.</li>
+</ul>
+
+<h2>Find broken links</h2>
+
+<p>Only when you run Find broken links from the dashboard's ⋯ menu, Sortmark sends one HEAD request, without cookies, to the address of each saved web bookmark to see whether the site still answers; nothing else is sent, and nothing at all otherwise.</p>
+
+<h2>Secure folders</h2>
+
+<p>You can make a folder a secure folder in Settings. Opening it uses the system's Touch ID, Face ID or password prompt through Apple's LocalAuthentication; Sortmark receives only whether it succeeded, never biometric data. Secure folders are hidden in Sortmark's pages, not encrypted, and they sync like other folders if Sync with iCloud is on. Whether they are hidden on a device stays on that device.</p>
+
+<h2>Optional: Smart sorting with an AI provider</h2>
+
+<p>Smart sorting is off by default. To use it, you add your own API key from Anthropic, OpenAI, Google or xAI in Settings. The switch "Send page details to Anthropic to pick a folder" (it names the provider you selected: Anthropic, OpenAI, Google or xAI) stays off until you save a key. When you turn it on for a provider, Sortmark opens a dialog titled "Allow Anthropic to receive page details?" (again naming that provider) that lists exactly what is sent. Nothing is sent unless you click "Allow" ("Not now" leaves it off), and switching to a different provider asks again. The same list is always shown in Settings under "What Sortmark sends".</p>
+
+<p>Once allowed, whenever Sortmark's built-in rules are unsure where a page belongs, it sends the following to the provider you chose:</p>
+
+<ul>
+  <li>the page's address without the query string (the part after "?") or "#";</li>
+  <li>the page's title, site name, description, headings, and about the first 600 words of visible text;</li>
+  <li>your list of folder names.</li>
+</ul>
+
+<p>Pages that are not http or https are never sent. The request goes directly from Safari to that provider, using your key. It does not pass through the developer. Thumbnails are not sent with a saved page. With Smart sorting on, the request also includes a few example titles and site names from your own folders (never their addresses), so the provider can recognise folders you made yourself; your other bookmarks are not sent. Review my library is different: only when you start it, and after you allow it in its own consent dialog, it sends your bookmark list to the selected provider in batches of 40, up to 2,000 bookmarks. For each bookmark it sends the title, a trimmed address (site and path, without the query string), a trimmed description, the site name, its current folder and whether it is flagged for review, plus your folder names, a few example titles and site names from your folders, and learned site rules; it never sends screenshots, favicon data or your API key. Page text can include personal information if the page shows it, so you can turn Smart sorting off, or remove your key, at any time.</p>
+
+<p>The provider handles that information under its own terms and privacy policy:</p>
+
+<ul>
+  <li>Anthropic: <a href="https://www.anthropic.com/privacy">https://www.anthropic.com/privacy</a></li>
+  <li>OpenAI: <a href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a></li>
+  <li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>xAI: <a href="https://x.ai/legal/privacy-policy">https://x.ai/legal/privacy-policy</a></li>
+</ul>
+
+<h2>Your API key</h2>
+
+<p>Your key is stored unencrypted in the extension's local storage on this device and is sent only to the provider it belongs to. It is never synced. It is not included in exports. Anyone with access to your user account and Safari's extension storage could read it.</p>
+
+<h2>Deleting your data</h2>
+
+<p>In Settings you can use "Delete thumbnails…" (Data), "Forget all…" (Learned sites), remove your key (Smart sorting), and delete bookmarks. "Delete all data…" (Data, confirmed in the dialog "Delete all Sortmark data?") removes everything Sortmark has stored: bookmarks, thumbnails, learned sites, folders, settings and keys. Removing the Sortmark app and extension from your Mac also removes its stored data. Data already sent to an AI provider is held by that provider, and you would need to contact them about it.</p>
+
+<h2>What we declare on the App Store</h2>
+
+<p>In its App Privacy section, Sortmark declares that it collects Browsing History and Other User Content, for App Functionality only, not linked to your identity, and not used for tracking. This covers the optional Smart sorting request described above, including the example titles and site names from your folders. The developer does not receive this data. We declare it because it leaves your device for the provider you chose.</p>
+
+<h2>Where to find this policy</h2>
+
+<p>This policy is linked from Settings &gt; About, from the footer of the welcome page that opens after installation, and from the Sortmark app window.</p>
+
+<h2>Children</h2>
+
+<p>Sortmark is not directed at children and does not knowingly collect information from anyone.</p>
+
+<h2>Changes</h2>
+
+<p>If this policy changes, the new version will be posted here with a new effective date.</p>
+
+<h2>Contact</h2>
+
+<p>Questions: <a href="mailto:turmoil.micros-9m@icloud.com">turmoil.micros-9m@icloud.com</a></p>
+</main>
+<footer><a href="/sortmark/support/">Sortmark support</a> · <a href="/">AO Coffee</a></footer>
+</body>
+</html>
