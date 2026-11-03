@@ -25,6 +25,7 @@ body {
   overflow-wrap: break-word;
 }
 h1 { font-size: 2rem; line-height: 1.2; margin-top: 0; }
+main > :first-child { margin-top: 0; }
 h2 { font-size: 1.3rem; margin-top: 2.2rem; }
 li { margin-bottom: 0.4rem; }
 a { color: var(--link); }
