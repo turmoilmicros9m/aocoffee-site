@@ -45,7 +45,7 @@
 
 <h2>Find broken links</h2>
 
-<p>Only when you run Find broken links from the dashboard's ⋯ menu, Sortmark sends one HEAD request, without cookies, to the address of each saved web bookmark to see whether the site still answers; nothing else is sent, and nothing at all otherwise.</p>
+<p>Only when you run Find broken links from the dashboard's ⋯ menu does Sortmark contact your saved sites, and it asks then for access to websites unless you already allowed it. Without that access, Sortmark sends one HEAD request, without cookies, to the home page of each saved site to see whether the site still answers. If you allow it, Sortmark instead sends a request, without cookies, to each saved web bookmark's page, without its query string, to read whether the page still exists (and, if that page doesn't answer at all, to the site's home page). Sortmark never reads page content, nothing else is sent, and nothing at all is sent otherwise. You can remove the access in your browser's extension settings.</p>
 
 <h2>Secure folders</h2>
 
