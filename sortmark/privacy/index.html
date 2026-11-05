@@ -19,12 +19,16 @@
 <p>When you click the Sortmark button (or use its shortcut), Sortmark reads the current page and saves:</p>
 
 <ul>
-  <li>the page's address, title, description, site name, icon, main image address, and the folder it was filed in;</li>
-  <li>a small screenshot (thumbnail) of the part of the page that was visible, unless you turn off "Save page thumbnails" in Settings &gt; Data. Thumbnails are skipped in private windows;</li>
-  <li>your folders, the sites Sortmark has learned to file for you, and your settings.</li>
+  <li>the page's address, title, description, site name, icon, main image address, type, tags, breadcrumbs, language, image descriptions (alt text), any text you had selected, and the folder it was filed in;</li>
+  <li>on a Mac, a small screenshot (thumbnail) of the part of the page that was visible, only if you turn on "Save page thumbnails" in Settings &gt; Data (off by default on new installs). Thumbnails are never taken in private windows. On iPhone and iPad, Sortmark never takes screenshots;</li>
+  <li>your folders, the sites Sortmark has learned to file for you, the title words and sites it counts when you move a bookmark or confirm its folder (never for a secure folder; kept on this device only, never exported or synced), and your settings.</li>
 </ul>
 
 <p>All of this stays in Safari's storage for the Sortmark extension on your device. If you turn on Sync with iCloud in Settings (it is off by default), your bookmarks, folders and learned sites are also stored in your private iCloud database, which only your Apple Account can access, to keep your devices in sync; thumbnails, API keys and settings are never synced. Nothing is uploaded to the developer or shared with advertisers or data brokers. Thumbnails are never included in exports. Sortmark does not track you.</p>
+
+<p>Sortmark never reads or saves anything from a private window on its own. A page in a private window is saved only if you save it yourself, and then it gets no thumbnail and is never sent to an AI provider.</p>
+
+<p>When Sortmark shows your bookmarks (in the dashboard, for example), Safari loads each saved page's icon and preview image from that page's own site, as it would if you visited the page. Those sites see an ordinary image request; Sortmark adds nothing to it.</p>
 
 <h2>Optional: Sync with iCloud</h2>
 
@@ -59,7 +63,9 @@
   <li>your list of folder names.</li>
 </ul>
 
-<p>Pages that are not http or https are never sent. The request goes directly from Safari to that provider, using your key. It does not pass through the developer. Thumbnails are not sent with a saved page. With Smart sorting on, the request also includes a few example titles and site names from your own folders (never their addresses), so the provider can recognise folders you made yourself; your other bookmarks are not sent. Review my library is different: only when you start it, and after you allow it in its own consent dialog, it sends your bookmark list to the selected provider in batches of 40, up to 2,000 bookmarks. For each bookmark it sends the title, a trimmed address (site and path, without the query string), a trimmed description, the site name, its current folder and whether it is flagged for review, plus your folder names, a few example titles and site names from your folders, and learned site rules; it never sends screenshots, favicon data or your API key. Page text can include personal information if the page shows it, so you can turn Smart sorting off, or remove your key, at any time.</p>
+<p>The provider answers with a folder and, unless you turn off "Add a one-line note to bookmarks the AI files or sorts", a one-line note about the page (Smart sort my library also writes one for each bookmark it sorts that has no note); the note is stored with the bookmark on your device, syncs with it if Sync with iCloud is on, and is never sent back to a provider.</p>
+
+<p>Pages that are not http or https are never sent. The request goes directly from Safari to that provider, using your key. It does not pass through the developer. Thumbnails are not sent with a saved page. With Smart sorting on, the request also includes a few example titles and site names from your own folders (never their addresses), so the provider can recognise folders you made yourself; your other bookmarks are not sent. Smart sort my library is different: only when you start it, and after you allow it in its own consent dialog, it sends your bookmark list to the selected provider in batches of 40, up to 2,000 bookmarks. For each bookmark it sends the title, a trimmed address (site and path, without the query string), a trimmed description, the site name, its current folder and whether it is flagged for review, plus your folder names, a few example titles and site names from your folders, and learned site rules; it never sends screenshots, favicon data or your API key. Sort folders, under the same permission and only when you start it, sends your folder names with each one's bookmark count and a few example titles and site names, and the titles and site names of up to 300 bookmarks from your biggest folders, in one request; never their addresses. Page text can include personal information if the page shows it, so you can turn Smart sorting off, or remove your key, at any time.</p>
 
 <p>The provider handles that information under its own terms and privacy policy:</p>
 
@@ -76,7 +82,7 @@
 
 <h2>Deleting your data</h2>
 
-<p>In Settings you can use "Delete thumbnails…" (Data), "Forget all…" (Learned sites), remove your key (Smart sorting), and delete bookmarks. "Delete all data…" (Data, confirmed in the dialog "Delete all Sortmark data?") removes everything Sortmark has stored: bookmarks, thumbnails, learned sites, folders, settings and keys. Removing the Sortmark app and extension from your Mac also removes its stored data. Data already sent to an AI provider is held by that provider, and you would need to contact them about it.</p>
+<p>In Settings you can use "Delete thumbnails…" (Data), "Forget all…" (Learned sites, and Learned words), remove your key (Smart sorting), and delete bookmarks. "Delete all data…" (Data, confirmed in the dialog "Delete all Sortmark data?") removes everything Sortmark has stored on that device: bookmarks, thumbnails, learned sites and words, folders, settings and keys. Removing the Sortmark app from a Mac, iPhone or iPad also removes the data Sortmark stored on that device. It does not remove the iCloud copy if you turned on Sync with iCloud: use "Delete Sortmark's iCloud data…" (Settings &gt; Data) before removing the app, or delete Sortmark's data in your device's iCloud storage settings. Data already sent to an AI provider is held by that provider, and you would need to contact them about it.</p>
 
 <h2>What we declare on the App Store</h2>
 
