@@ -13,7 +13,6 @@ const pages = [
 // Fill in the placeholders and drop the leading <!-- ... --> note.
 const fill = (md) => md
   .replace(/^<!--[\s\S]*?-->\s*/, '')
-  .replace(/Effective date: .*/, 'Effective date: 2026-11-03')
   .replace(/https:\/\/example\.com\/sortmark\/privacy \(placeholder, replace\)/g, 'https://aocoffee.com/sortmark/privacy/')
   .replace(/\[CONTACT EMAIL\]( \(placeholder, replace\))?/g, email);
 
