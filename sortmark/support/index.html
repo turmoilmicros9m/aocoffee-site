@@ -12,9 +12,9 @@
 
 <h2>What Sortmark is</h2>
 
-<p>Sortmark is a Safari extension for macOS that saves web pages with one click and files each one in a folder. It uses built-in sorting rules on your Mac. Optionally, you can add your own AI provider key for pages the rules are unsure about. Sortmark has no account and no developer servers; optional iCloud sync uses your own iCloud account. Requires macOS 14 or later.</p>
+<p>Sortmark is a Safari extension for Mac, iPhone and iPad that saves web pages and files each one in a folder. It uses built-in sorting rules on your device. Optionally, you can add your own AI provider key for pages the rules are unsure about. Sortmark has no account and no developer servers; optional iCloud sync uses your own iCloud account. Requires macOS 14 or later, or iOS or iPadOS 18 or later.</p>
 
-<h2>Turn Sortmark on in Safari</h2>
+<h2>Turn Sortmark on in Safari on a Mac</h2>
 
 <ol>
   <li>Open the Sortmark app and click "Open Safari Extensions Settings…". You can also open Safari, then Safari &gt; Settings &gt; Extensions.</li>
@@ -23,41 +23,61 @@
   <li>If the Sortmark button is not in the toolbar, choose View &gt; Customize Toolbar in Safari and drag it in.</li>
 </ol>
 
-<h2>Using Sortmark</h2>
+<h2>Using Sortmark on a Mac</h2>
 
 <ul>
   <li>Click the toolbar button to save the current page. A small note appears on the page showing which folder it went to, with "Change folder" and "Remove".</li>
   <li>Double-click the button, or press Option-Shift-S, to open the folder picker. Type a few letters of a folder and press Return. Sortmark remembers your choice for that site.</li>
   <li>Right-click the button for "Change folder for this page…", "View all bookmarks" (the dashboard) and "Sortmark settings".</li>
+  <li>Opening a secure folder asks for Touch ID or your Mac's password.</li>
   <li>Help &gt; Sortmark Help in the Sortmark app opens this page. The app window and Settings &gt; About also link to the Privacy Policy and Support pages, and show the version ("Sortmark 1.0.0").</li>
+</ul>
+
+<h2>Turn Sortmark on in Safari on iPhone and iPad</h2>
+
+<ol>
+  <li>Open Settings &gt; Apps &gt; Safari &gt; Extensions, tap Sortmark and turn on Allow Extension. You can also open Safari, tap the page menu at the left of the address bar, then tap Manage Extensions.</li>
+  <li>Open a web page in Safari, tap the page menu, then tap Sortmark.</li>
+  <li>The first time on a site, Safari asks whether Sortmark may access it. Choose "Always Allow..." or "Allow for One Day".</li>
+</ol>
+
+<h2>Using Sortmark on iPhone and iPad</h2>
+
+<ul>
+  <li>Sortmark is in Safari's page menu, at the left of the address bar. Tap Sortmark there to save the current page. A small note appears on the page showing which folder it went to.</li>
+  <li>Tap Sortmark again on the same page to pick another folder. Sortmark remembers your choice for that site.</li>
+  <li>The popup's ⋯ menu has "Save all open tabs", "View all bookmarks" and "Settings".</li>
+  <li>Opening a secure folder asks for Face ID (or Touch ID or your passcode, depending on the device).</li>
+  <li>Sync with iCloud is in Settings &gt; Data, as on the Mac.</li>
+  <li>Thumbnails come from each page's own preview image. Sortmark never takes screenshots on iPhone or iPad.</li>
 </ul>
 
 <h2>Frequently asked questions</h2>
 
 <p><strong>Where is my data?</strong><br>
-On your Mac only, in Safari's storage for the Sortmark extension: bookmarks, folders, learned sites, settings and (unless you turn off "Save page thumbnails" in Settings &gt; Data) page thumbnails. No thumbnails are taken in private windows. Nothing is sent to the developer.</p>
+On each device, in Safari's storage for the Sortmark extension: bookmarks, folders, learned sites and settings. On a Mac, page thumbnails too if you turn on "Save page thumbnails" in Settings &gt; Data (off by default on new installs); no thumbnails are taken in private windows. If you turn on Sync with iCloud, bookmarks, folders and learned sites are also kept in your own iCloud account. Nothing is sent to the developer.</p>
 
 <p><strong>How do I delete it?</strong><br>
-Open "Sortmark settings" (right-click the toolbar button), go to Data, and click "Delete all data…", then confirm "Delete all data" in the dialog "Delete all Sortmark data?". This removes bookmarks, thumbnails, learned sites, folders, settings and API keys. You can also use "Delete thumbnails…" (Data), "Forget all…" (Learned sites) or delete individual bookmarks separately. Removing the app and extension also removes the stored data. Back up first with the JSON export if you want a copy.</p>
+Open Sortmark's Settings, go to Data, and choose "Delete all data…", then confirm "Delete all data" in the dialog "Delete all Sortmark data?". This removes bookmarks, thumbnails, learned sites, folders, settings and API keys from that device. To remove the iCloud copy, use "Delete Sortmark's iCloud data…" in the same place. You can also use "Delete thumbnails…" (Data), "Forget all…" (Learned sites) or delete individual bookmarks separately. Removing the app also removes the data stored on that device, but not the iCloud copy. Back up first with "Export backup (JSON)" if you want a copy.</p>
 
 <p><strong>Does Smart sorting cost money or need an account?</strong><br>
-Smart sorting needs your own API key from Anthropic (Claude), OpenAI (GPT), Google (Gemini) or xAI (Grok). Sortmark does not provide one, and the provider may charge you for use. Sortmark works fully without it. It is off until you save a key, turn on the switch "Send page details to Anthropic to pick a folder" (it names the provider you selected: Anthropic, OpenAI, Google or xAI) in Settings &gt; Smart sorting (AI), and click "Allow" in the dialog "Allow Anthropic to receive page details?" ("Not now" leaves it off). Settings shows exactly what is sent under "What Sortmark sends". Then, for uncertain pages, Sortmark sends the page address without its query string, title, site name, description, headings, about the first 600 words of text and your folder names from Safari directly to that provider. Remove the key or turn Smart sorting off to stop. See the privacy policy for details: <a href="https://aocoffee.com/sortmark/privacy/">https://aocoffee.com/sortmark/privacy/</a>.</p>
+Smart sorting needs your own API key from Anthropic (Claude), OpenAI (GPT), Google (Gemini) or xAI (Grok). Sortmark does not provide one, and the provider may charge you for use. Sortmark works fully without it. It is off until you save a key, turn on the switch "Send page details to Anthropic to pick a folder" (it names the provider you selected: Anthropic, OpenAI, Google or xAI) in Settings &gt; Smart sorting (AI), and choose "Allow" in the dialog "Allow Anthropic to receive page details?" ("Not now" leaves it off). Settings shows exactly what is sent under "What Sortmark sends". Then, for uncertain pages, Sortmark sends the page address without its query string, title, site name, description, headings, about the first 600 words of text and your folder names from Safari directly to that provider. Remove the key or turn Smart sorting off to stop. See the privacy policy for details: <a href="https://aocoffee.com/sortmark/privacy/">https://aocoffee.com/sortmark/privacy/</a>.</p>
 
 <p><strong>Why didn't a page save?</strong><br>
-Sortmark cannot run on some pages: Safari's start page, settings and extension pages, new tab pages, and other restricted pages. It also cannot read a site you have not allowed it on. Check Safari &gt; Settings &gt; Extensions &gt; Sortmark &gt; Edit Websites... and set the site to "Allow". Then reload the page and try again.</p>
+Sortmark cannot run on some pages: Safari's start page, settings and extension pages, new tab pages, and other restricted pages. It also cannot read a site you have not allowed it on. On a Mac, check Safari &gt; Settings &gt; Extensions &gt; Sortmark &gt; Edit Websites... and set the site to "Allow". On iPhone and iPad, check Settings &gt; Apps &gt; Safari &gt; Extensions &gt; Sortmark. Then reload the page and try again.</p>
 
-<p><strong>The shortcuts do not work, or open the wrong thing.</strong><br>
-Sortmark suggests Shift-Command-S (save) and Shift-Command-L (dashboard). Safari already uses those keys in its own menus, so they collide. Reassign them under Safari &gt; Settings &gt; Extensions, select Sortmark, and set shortcuts you like. Option-Shift-S (change folder) normally has no conflict.</p>
+<p><strong>Which keyboard shortcuts does Sortmark have?</strong><br>
+On a Mac, Option-Shift-S changes the folder of the current page and Option-Shift-R saves it to your reading list. Saving a page and opening the dashboard have no shortcut at first, because Safari's own menus already use the obvious keys. To set or change any of them, open Safari &gt; Settings &gt; Extensions, select Sortmark, and choose the keys you like.</p>
 
 <p><strong>Does it sync between my devices?</strong><br>
-Yes, in Safari, if you turn it on: Settings &gt; Data &gt; Sync with iCloud, on each Mac, iPhone and iPad (signed in to the same Apple Account). Bookmarks, folders and learned sites sync; screenshots, API keys and settings stay on each device. Bookmarks already on a device and in iCloud are merged. To remove the iCloud copy, use "Delete Sortmark's iCloud data…" in the same place. Chrome can't sync with Safari; use "Export backup (JSON)" and import it instead.</p>
+Yes, if you turn it on: Settings &gt; Data &gt; Sync with iCloud, on each Mac, iPhone and iPad (signed in to the same Apple Account). Bookmarks, folders and learned sites sync; screenshots, API keys and settings stay on each device. Bookmarks already on a device and in iCloud are merged. To remove the iCloud copy, use "Delete Sortmark's iCloud data…" in the same place.</p>
 
 <p><strong>Does it change Safari's own bookmarks?</strong><br>
 No. Sortmark keeps its own list.</p>
 
 <h2>Contact</h2>
 
-<p>Email: <a href="mailto:turmoil.micros-9m@icloud.com">turmoil.micros-9m@icloud.com</a>. Please include your macOS and Safari versions and what you saw.</p>
+<p>Email: <a href="mailto:turmoil.micros-9m@icloud.com">turmoil.micros-9m@icloud.com</a>. Please include your device (Mac, iPhone or iPad), its system and Safari versions, and what you saw.</p>
 </main>
 <footer><a href="/sortmark/privacy/">Sortmark privacy policy</a> · <a href="/">AO Coffee</a></footer>
 </body>
