@@ -10,7 +10,7 @@
 <main>
 <h1>Sortmark Privacy Policy</h1>
 
-<p>Effective date: 2026-11-07</p>
+<p>Effective date: 2026-11-08</p>
 
 <p>Sortmark is a Safari extension that saves web pages and sorts them into folders. It is made by Jeffrey Knott. The short version: Sortmark has no developer servers, no accounts and no analytics, and the developer never receives your data.</p>
 
@@ -19,10 +19,11 @@
 <p>When you click the Sortmark button (or use its shortcut), Sortmark reads the current page and saves:</p>
 
 <ul>
-  <li>the page's address, title, description, site name, icon, main image address, type, tags, breadcrumbs, language, image descriptions (alt text), any text you had selected, and the folder it was filed in;</li>
+  <li>the page's address, title, description, site name, icon, main image address, type, tags, breadcrumbs, language, image descriptions (alt text), any text you had selected, the address of its feed if the page names one, and the folder it was filed in;</li>
   <li>on a Mac, a small screenshot (thumbnail) of the part of the page that was visible, only if you turn on "Save page thumbnails" in Settings &gt; Data (off by default on new installs). Thumbnails are never taken in private windows. On iPhone and iPad, Sortmark never takes screenshots;</li>
   <li>saved copies: if you turn on "Keep a copy of each page you save" in Settings &gt; Preservation (off by default), or choose "Save a copy" in the popup, a readable copy of the page's text and the addresses of its images. It stays on this device only and is never synced or exported. Opening a copy loads its images from the web, so the sites that host them see an ordinary image request;</li>
-  <li>your folders, the sites Sortmark has learned to file for you, the title words and sites it counts when you move a bookmark or confirm its folder (never for a secure folder; kept on this device only, never exported or synced), and your settings.</li>
+  <li>your folders, the sites Sortmark has learned to file for you, the title words and sites it counts when you move a bookmark or confirm its folder (never for a secure folder; kept on this device only, never exported or synced), and your settings;</li>
+  <li>followed feeds and their items: the feeds you follow (up to 100) and the title, address and date of each one's latest posts (up to 50 per feed). They stay on this device only and are never synced or exported.</li>
 </ul>
 
 <p>All of this stays in Safari's storage for the Sortmark extension on your device. If you turn on Sync with iCloud in Settings (it is off by default), your bookmarks, folders and learned sites are also stored in your private iCloud database, which only your Apple Account can access, to keep your devices in sync; thumbnails, API keys and settings are never synced. Nothing is uploaded to the developer or shared with advertisers or data brokers. Thumbnails are never included in exports. Sortmark does not track you.</p>
@@ -51,6 +52,10 @@
 <p>Only when you press Find archived copies (or Find archived copy) under Broken links, and after you allow it once, Sortmark sends the address of each broken bookmark, without its query string, to the Internet Archive's Wayback Machine (archive.org) to find an archived copy. Nothing else is sent: no titles, notes, page text or other bookmarks. The archived copy's address and date are kept with the bookmark on this device; they are not synced. Bookmarks in secure folders and on sites you never keep copies of are left out. The Internet Archive's privacy policy applies to those requests.</p>
 
 <p>Only when you press Save my links to the Wayback Machine in Settings › Preservation, and after you allow it once, Sortmark sends the address of each bookmark the archive has no copy of from the last year, without its query string, to the Internet Archive with your own archive.org keys, and the archive makes a public copy of each page. Nothing else is sent. Bookmarks in secure folders, locked or not, and on sites you never keep copies of are left out. Your archive.org keys stay in this browser's extension storage on this device; they are never synced or exported. A bookmark's Save to the Wayback Machine… menu item only opens the archive's own Save page in a new tab.</p>
+
+<h2>Followed feeds</h2>
+
+<p>Following a site needs the same access to websites. Only when you follow one (Follow in the dashboard or the popup, or Follow a feed… with its address) does Sortmark fetch that site's feed; if it doesn't know the feed's address yet, it first fetches the site's home page and a few common feed addresses on that site to find it. After that, Sortmark fetches only the feeds you follow, only while the dashboard is open (when it opens, in the Feed view, or when you press Refresh), at most once every 30 minutes per feed unless you press Refresh, and never in the background. Each request asks for the feed's address only and is sent without cookies; nothing about you or your bookmarks is sent. The feeds and their posts stay on this device and are not synced or exported. Unfollow (in the Feed view or Settings › Feeds) stops the requests for that feed and removes it and its posts.</p>
 
 <h2>Secure folders</h2>
 
@@ -83,7 +88,7 @@
 
 <h2>Optional: Smart sorting with Apple Intelligence</h2>
 
-<p>On a Mac, iPhone or iPad with Apple Intelligence (macOS 26 or iOS 26 and later), you can pick Apple Intelligence as the provider instead. It needs no key and nothing is sent anywhere: Apple's on-device model runs on your device, inside the Sortmark app, and the page details never leave it, not to Apple and not to the developer. The switch "Use Apple Intelligence to pick a folder" stays off until you turn it on and allow it in a dialog that lists what the model sees: the same details listed above (the page's address without the query string, its title, site name, description, headings, about the first 600 words of visible text, your folder names and a few of your bookmarks most like the page). The model answers with a folder only. Smart sort my library also runs on-device with Apple Intelligence: it goes through your unsure pages and pages in Other one at a time, and nothing is sent anywhere. Duplicates and Sort folders with AI need one of the providers above; Sort folders without AI suggests only merges of similar folder names and removals of empty subfolders.</p>
+<p>On a Mac, iPhone or iPad with Apple Intelligence (macOS 26 or iOS 26 and later), you can pick Apple Intelligence as the provider instead. It needs no key and nothing is sent anywhere: Apple's on-device model runs on your device, inside the Sortmark app, and the page details never leave it, not to Apple and not to the developer. The switch "Use Apple Intelligence to pick a folder" stays off until you turn it on and allow it in a dialog that lists what the model sees: the same details listed above (the page's address without the query string, its title, site name, description, headings, about the first 600 words of visible text, your folder names and a few of your bookmarks most like the page). The model answers with a folder only. Smart sort my library also runs on-device with Apple Intelligence: it goes through your unsure pages and pages in Unsorted one at a time, and nothing is sent anywhere. Duplicates and Sort folders with AI need one of the providers above; Sort folders without AI suggests only merges of similar folder names and removals of empty subfolders.</p>
 
 <h2>Your API key</h2>
 
@@ -91,11 +96,11 @@
 
 <h2>Deleting your data</h2>
 
-<p>In Settings you can use "Delete thumbnails…" (Data), "Delete all saved copies…" (Preservation), "Forget all…" (Learned sites, and Learned words), remove your key (Smart sorting), and delete bookmarks. "Delete all data…" (Data, confirmed in the dialog "Delete all Sortmark data?") removes everything Sortmark has stored on that device: bookmarks, thumbnails, saved copies, learned sites and words, folders, settings and keys. After an offline or failed sync, the app's own sync queue on this device may still hold copies until the next sync or until the app is removed. Removing the Sortmark app from a Mac, iPhone or iPad also removes the data Sortmark stored on that device. It does not remove the iCloud copy if you turned on Sync with iCloud: use "Delete Sortmark's iCloud data…" (Settings &gt; Data) before removing the app, or delete Sortmark's data in your device's iCloud storage settings. Data already sent to an AI provider is held by that provider, and you would need to contact them about it.</p>
+<p>In Settings you can use "Delete thumbnails…" (Data), "Delete all saved copies…" (Preservation), "Forget all…" (Learned sites, and Learned words), remove your key (Smart sorting), and delete bookmarks. "Delete all data…" (Data, confirmed in the dialog "Delete all Sortmark data?") removes everything Sortmark has stored on that device: bookmarks, thumbnails, saved copies, followed feeds, learned sites and words, folders, settings and keys. After an offline or failed sync, the app's own sync queue on this device may still hold copies until the next sync or until the app is removed. Removing the Sortmark app from a Mac, iPhone or iPad also removes the data Sortmark stored on that device. It does not remove the iCloud copy if you turned on Sync with iCloud: use "Delete Sortmark's iCloud data…" (Settings &gt; Data) before removing the app, or delete Sortmark's data in your device's iCloud storage settings. Data already sent to an AI provider is held by that provider, and you would need to contact them about it.</p>
 
 <h2>What we declare on the App Store</h2>
 
-<p>In its App Privacy section, Sortmark declares that it collects Browsing History and Other User Content, for App Functionality only, not linked to your identity, and not used for tracking. This covers the optional Smart sorting request described above, including the example titles and site names from your folders. The developer does not receive this data. We declare it because it leaves your device for the provider you chose. Only when you ask, the addresses of broken bookmarks also go to the bookmarked sites themselves (Find broken links) and to the Internet Archive (Find archived copies), and your bookmarks' addresses to the Internet Archive (Save my links to the Wayback Machine), as described above.</p>
+<p>In its App Privacy section, Sortmark declares that it collects Browsing History and Other User Content, for App Functionality only, not linked to your identity, and not used for tracking. This covers the optional Smart sorting request described above, including the example titles and site names from your folders. The developer does not receive this data. We declare it because it leaves your device for the provider you chose. Only when you ask, the addresses of broken bookmarks also go to the bookmarked sites themselves (Find broken links) and to the Internet Archive (Find archived copies), and your bookmarks' addresses to the Internet Archive (Save my links to the Wayback Machine); and Sortmark fetches the feeds you follow from their own sites (Followed feeds), as described above.</p>
 
 <h2>Where to find this policy</h2>
 
